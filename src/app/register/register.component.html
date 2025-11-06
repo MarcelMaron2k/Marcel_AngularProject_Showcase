@@ -1,0 +1,52 @@
+<div id="container">
+
+    <p>Register</p>
+
+    <div id="container2">
+        <form [formGroup]="registerForm" (ngSubmit)="register()">
+            <div>
+                <input class="formInputs" type="email" id="EmailInput" formControlName="mail" placeholder="Email">
+                <div *ngIf="!registerForm.controls['mail'].valid && registerForm.controls['mail'].touched" class="invalid">Invalid email</div>        
+            </div>
+        
+            <div>
+                <input class="formInputs" type="password" id="PasswordInput" formControlName="password" placeholder="Password">
+                <div *ngIf="!registerForm.controls['password'].valid && registerForm.controls['password'].touched" >Invalid password</div>
+            </div>
+    
+            <div>
+                <input class="formInputs" type="password" id="PasswordInput2" formControlName="passwordRepeat" placeholder="Repeat Password">
+                <div *ngIf="registerForm.errors?.['PasswordNoMatch']">Passwords Don't Match</div>
+            </div>
+        
+            <div>
+                <input class="formInputs" type="text" id="nameInput" formControlName="name" placeholder="Full Name">
+            </div>
+        
+            <div>
+                <label for="dateInput" id="dateInputLabel" >Birth Date:</label>
+                <input type="date" id="dateInput" formControlName="date">
+        
+            </div>
+        
+            <div>
+                <label for="gender" id="genderLabel">Gender:</label>
+                <select name="cars" id="cars" formControlName="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+        
+            </div>
+    
+            <div>
+                <input formControlName="terms" type="checkbox" value="" id="form2Example3c" />
+                <label for="form2Example3">
+                    I agree all statements in <a href="#!">Terms of service</a>
+                </label>
+            </div>
+        
+            <button type="submit" class="btn btn-primary"[disabled]="!registerForm.valid" >Register</button>
+        </form>    
+    </div>
+</div>
+  

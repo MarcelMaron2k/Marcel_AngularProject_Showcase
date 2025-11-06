@@ -1,0 +1,67 @@
+#imageDiv{
+    margin-left:auto;
+    margin-right:auto;
+    width:154px;
+    height:200px;
+    border-radius:10px;
+    text-align:center;
+}
+img{
+    width:150px;
+    height:150px;
+    padding-top: 2px;
+    border-radius:10px;
+}
+#textdiv{
+    text-align: center;
+}
+#p1{
+    margin-top:0px;
+
+}
+#p2{
+    margin-top:-15px;
+}
+#p3{
+    margin:auto;
+    align-self: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+#aboutPanel{
+    text-align: center;
+    margin:auto;
+    width: 90%;
+    border-radius:10px;
+}
+#aboutPanelContent{
+    font-size: 20px;
+}
+#aboutPanelTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+.plight {
+    background-color: white;
+}
+.pdark{
+    background-color: #011848;
+}
+.tlight{
+    color:black;
+}
+.tdark{
+    color:white;
+}
+
+#buttonDiv{
+    text-align:center;
+}
+button{
+    width:100px;
+    height:50px;
+    border-radius:10px;
+    background-color: #011848;
+    color:#ff7b00;
+}

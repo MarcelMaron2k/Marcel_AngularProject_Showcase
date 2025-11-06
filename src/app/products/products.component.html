@@ -1,0 +1,14 @@
+<div id="flex-container">
+    <div class = "cardStyle card" *ngFor="let laptop of productsLaptops">
+        <img class="imgStyle card-img-top" src="{{laptop.image}}" >
+        <div class="cardBodyStyle card-body">
+            <h4 class="card-title">{{laptop.code}}</h4>
+            <p class="card-text">Manufacturer: {{laptop.manufacturer}}</p>
+            <p class="card-text">Memory: {{laptop.ram}}GB</p>
+            <p class="card-text">Screen Size: {{laptop.size}} Inches</p>
+            <p class="card-text">Price: {{laptop.price}}₪</p>
+
+            <a [routerLink]="['../product/',laptop.id]" class="btnStyle btn btn-primary">Order</a>
+        </div>
+    </div>    
+</div>

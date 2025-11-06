@@ -1,0 +1,75 @@
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+}
+
+#container2{
+    padding:10px 10px 10px 10px;
+    background-color:#011848;
+    border-radius:20px;
+    max-width: 50vh;
+    color:#ffffff;
+
+    text-align:center;
+}
+
+.formInputs{
+    background-color:#011848;
+    border:1px solid #ffffff;
+    border-radius:20px;
+    width:100%;
+    padding-left: 10px;
+    padding-bottom:2px;
+    color:#ffffff;
+}
+
+.formInputs::placeholder{
+    color: #AAAAAABB;
+}
+
+hr{
+    background-color:#ffffff;
+}
+#submitBtn[disabled]{
+    background-color: #ff7b0088;
+    border-width:0px;
+    border-radius:5px;
+    width:90%;
+    color:#ffffff88;
+    font-weight: bold;
+
+}
+#submitBtn:not([disabled]){
+    background-color: #ff7b00;
+    border-width:0px;
+    border-radius:5px;
+    width:90%;
+    color:#ffffff;
+    font-weight: bold;
+
+}
+
+#registerBtn{
+    background-color:green;
+    border-width:0px;
+    border-radius:5px;
+    width:90%;
+    margin-bottom: 10px;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+#title{
+    font-size: xx-large;
+    font-weight: bold;
+    color:#011848;
+}
+
+#registerBtnLabel{
+    color:#ffffff;
+    font-weight: bold;
+    margin-bottom: 1px;
+}

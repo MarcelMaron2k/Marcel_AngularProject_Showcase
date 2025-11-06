@@ -1,0 +1,86 @@
+{
+    "users":[
+        {
+            "name": "marcel maron",
+            "email": "marcel@gmail.com",
+            "password":"1234",
+            "birthdate": "20/4/2000",
+            "gender":"male",
+            "isAdmin": "true"
+        },
+        {
+            "name": "Michelle Cain",
+            "email": "Michele@gmail.com",
+            "password":"4321",
+            "birthdate": "5/10/1992",
+            "gender":"female",
+            "isAdmin": "false"
+        }
+    ],
+    "laptops":[
+        {
+            "id": "92911",
+            "price": "3000",
+            "manufacturer": "Dell",
+            "image": "/assets/laptops/xps15.jpg",
+            "code": "XPS 15",
+            "ram": "8",
+            "size": "16",
+            "cpu": "AMD 5600x",
+            "gpu": "RTX 2060",
+            "storageSize": "1",
+            "storageDevice": "Samsung Evo 9",
+            "opSystem": "Windows 11",
+            "weight": "1.2",
+            "pop": "1"
+        },
+        {
+            "id": "18287",
+            "price": "2000",
+            "manufacturer": "ASUS",
+            "image": "/assets/laptops/tuf.jpg",
+            "code": "TUF D14",
+            "ram": "8",
+            "size": "15",
+            "cpu": "Intel I7 12600F",
+            "gpu": "RTX 3070",
+            "storageSize": "2",
+            "storageDevice": "Wester Digital Blue Caviar",
+            "opSystem": "Windows 11",
+            "weight": "2",
+            "pop": "2"
+        },
+        {
+            "id": "17721",
+            "price": "7000",
+            "manufacturer": "Apple",
+            "image": "/assets/laptops/macbook.jpg",
+            "code": "Macbook M3",
+            "ram": "16",
+            "size": "16",
+            "cpu": "Apple M3",
+            "gpu": "Apple M3",
+            "storageSize": "1",
+            "storageDevice": "Samsung Evo",
+            "opSystem": "MacOS 15 Sequoia",
+            "weight": "1.2",
+            "pop": "3"
+        },
+        {
+            "id": "12882",
+            "price": "4300",
+            "manufacturer": "ASUS",
+            "image": "/assets/laptops/zenbook.jpg",
+            "code": "Zenbook 13",
+            "ram": "16",
+            "size": "13",
+            "cpu": "AMD 7800x",
+            "gpu": "AMD 9700XT",
+            "storageSize": "2",
+            "storageDevice": "Wester Digital Black Caviar",
+            "opSystem": "Windows 11",
+            "weight": "3",
+            "pop": "4"
+        }
+    ]
+}

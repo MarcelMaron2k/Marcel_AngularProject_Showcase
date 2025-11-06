@@ -1,0 +1,20 @@
+<ul>
+    <li><a routerLink="home">Home</a></li>
+    <li><a routerLink="catalog">Catalog</a></li>
+    <li><a routerLink="about">About us</a></li>
+    <div *ngIf="isAdmin">
+      <li><a routerLink="manageProducts">Manage Products</a></li>
+    </div>
+    <div *ngIf="!logged">
+      <li><a routerLink="profile">Login</a></li>
+    </div>
+    <div *ngIf="logged">
+        <div class="dropdown">
+          <img class="logoImage" src='{{this.logo}}'/>
+          <div class="dropdown-content">
+            <button routerLink="profile/user">User Details</button>
+            <button (click)="logout()" routerLink="profile">Log Out</button>
+          </div>  
+        </div>          
+    </div>
+</ul> 

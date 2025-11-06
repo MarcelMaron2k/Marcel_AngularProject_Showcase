@@ -1,0 +1,25 @@
+<div id="container">
+    <p id="title">Log In</p>
+    <div id="container2">
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <div>
+              <input type="email" id="EmailInput" formControlName="mail" class="formInputs" placeholder="Email">
+              <div *ngIf="!loginForm.controls['mail'].valid && loginForm.controls['mail'].touched" class="invalid">Invalid Email</div>
+            </div>
+            <div style="margin-top:5px;">
+              <input type="password" id="PasswordInput" formControlName="password" class="formInputs" placeholder="Password">
+              <div *ngIf="!loginForm.controls['password'].valid && loginForm.controls['password'].touched" class="invalid">Invalid Password</div>
+            </div>
+            <div>
+              <input type="checkbox" id="robotCheck" formControlName="robot">
+              <label for="robotCheck">I'm not a Robot</label>
+            </div>
+            <button type="submit" [disabled]="!loginForm.valid" id="submitBtn" >Log In</button>
+            <hr>
+
+            <p id="registerBtnLabel">Don't have an account?</p>
+            <button routerLink="../register" id="registerBtn">Register</button>
+          </form>      
+
+    </div>
+</div>

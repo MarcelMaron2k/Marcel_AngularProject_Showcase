@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>{{laptop?.code}}</h1>
+    <div class="container3">
+        <img class="imgStyle" src="{{laptop?.image}}">
+        <p>Manufacturer: {{laptop?.manufacturer}}</p>        
+        <p>Price: {{laptop?.price}}</p>
+    </div>
+    <h4>Specifications</h4>
+    <div class="container2">
+        <p>Size: {{laptop?.size}} Inches</p>    
+        <p>Weight: {{laptop?.weight}} KG</p>    
+        <p>RAM: {{laptop?.ram}} RAM</p>   
+        <p>CPU: {{laptop?.cpu}}</p>
+        <p>GPU: {{laptop?.gpu}}</p>
+        <p>Storage: {{laptop?.storageDevice}}</p>
+        <p>Storage Size: {{laptop?.storageSize}} TB</p>
+        <p>Operating System: {{laptop?.opSystem}}</p>
+        <p>ID: {{laptop?.id}}</p>
+    </div>
+ </div>
+ <div id="buttonContainer">
+    <button id="backButton"(click)="Back()">Back</button>
+ </div>

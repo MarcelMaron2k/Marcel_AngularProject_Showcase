@@ -1,0 +1,13 @@
+div {
+    height: 80vh;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    aspect-ratio:16/9;
+    scale: 1.5;
+}
